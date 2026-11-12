@@ -77,18 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Case File 2026-AI-001 — Mayank Ojha | AI/ML Developer" },
+      { title: "Mayank.DEV — AI-Powered Products & Growth Systems for Local Businesses, Indore" },
       {
         name: "description",
         content:
-          "Confidential dossier of Mayank Ojha — AI/ML developer and freelance full-stack engineer. A cinematic, declassified case-file portfolio.",
+          "Mayank.DEV — AI-Powered Products & Growth Systems for Local Businesses, Indore",
       },
       { name: "author", content: "Mayank Ojha" },
-      { property: "og:title", content: "Case File 2026-AI-001 — Mayank Ojha" },
+      { property: "og:title", content: "Mayank.DEV — AI-Powered Products & Growth Systems for Local Businesses, Indore" },
       {
         property: "og:description",
         content:
-          "A declassified dossier: AI/ML projects, experience, and exhibits. Scroll to open the file.",
+          "Mayank.DEV — AI-Powered Products & Growth Systems for Local Businesses, Indore",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

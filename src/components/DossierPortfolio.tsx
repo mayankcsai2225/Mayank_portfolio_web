@@ -74,24 +74,24 @@ function CoverContent() {
   return (
     <div className="relative flex h-full w-full flex-col items-center justify-center px-10 text-ink">
       <div className="absolute left-8 top-8 rounded-sm bg-ink px-3 py-1 font-typewriter text-xs uppercase tracking-widest text-paper">
-        Property of Federal Records
+        Portfolio of Mayank Ojha
       </div>
       <div className="absolute right-8 top-8 rounded-sm border-2 border-ink/60 px-3 py-1 font-typewriter text-xs uppercase tracking-widest text-ink/80">
-        File 03 of 07
+        Portfolio · 2026
       </div>
 
       <div className="mb-10">
         <Stamp rotate={-8} className="!border-[6px] !px-6 !py-3 !text-4xl md:!text-5xl">
-          Classified
+          Portfolio
         </Stamp>
       </div>
 
       <div className="text-center font-typewriter">
         <div className="text-sm uppercase tracking-[0.4em] text-ink-soft">
-          Bureau of Talent Acquisition
+          Mayank.DEV · Indore
         </div>
         <div className="mt-2 font-stencil text-3xl md:text-4xl tracking-[0.3em] text-ink">
-          CASE FILE NO. 2026-AI-001
+          MAYANK.DEV · PORTFOLIO
         </div>
         <div className="mt-8 space-y-2 text-lg md:text-xl">
           <div>
@@ -99,7 +99,7 @@ function CoverContent() {
             <span className="font-bold tracking-widest">MAYANK OJHA</span>
           </div>
           <div>
-            <span className="text-ink-soft">CLEARANCE: </span>
+            <span className="text-ink-soft">FOCUS: </span>
             <span>AI/ML DEVELOPER — FULL-STACK — FREELANCE</span>
           </div>
           <div>
@@ -115,7 +115,7 @@ function CoverContent() {
 
       <div className="coffee-stain h-32 w-32" style={{ top: "18%", right: "12%" }} />
       <Stamp rotate={12} className="!absolute !bottom-24 !right-16 !text-lg opacity-80">
-        Eyes Only
+        Personal Portfolio
       </Stamp>
     </div>
   );
@@ -138,10 +138,10 @@ function ProfileLeft() {
 
       <div className="space-y-3 font-typewriter text-[15px] leading-relaxed text-ink">
         <p>
-          <span className="font-bold">SUBJECT</span> is a final-year B.Tech
-          Computer Science Engineering <span className="italic">(Artificial Intelligence – IBM)</span>{" "}
-          student at Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV), Indore,
-          graduating <span className="font-bold">May 2026</span>.
+          <span className="font-bold">MAYANK OJHA</span> is a B.Tech Computer
+          Science Engineering graduate <span className="italic">(Artificial Intelligence – IBM)</span>{" "}
+          from Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV), Indore. He
+          graduated in <span className="font-bold">May 2026</span>.
         </p>
         <p>
           FILE INDICATES experience building <span className="font-bold">end-to-end AI applications</span>{" "}
@@ -162,7 +162,7 @@ function ProfileLeft() {
       </div>
 
       <div className="mt-auto flex items-end justify-between font-typewriter text-xs uppercase tracking-widest text-ink-soft">
-        <span>Prepared: 2026 · Bureau/AI-01</span>
+        <span>Prepared: 2026 · Portfolio/AI-01</span>
         <span>Page 01 / 14</span>
       </div>
     </div>
@@ -214,7 +214,7 @@ function ProfileRight() {
               <TypedLine label="Name" value="Mayank Ojha" />
               <TypedLine label="Location" value="Indore, MP · IN" />
               <TypedLine label="Role" value="AI/ML · Generative AI" />
-              <TypedLine label="Status" value="Final Year · Available" />
+              <TypedLine label="Status" value="B.Tech graduate · Available for freelance work" />
             </div>
           </div>
 
@@ -259,6 +259,76 @@ function ProfileRight() {
   );
 }
 
+function BusinessPage() {
+  return (
+    <section aria-labelledby="business-heading" className="flex h-full flex-col p-8 text-ink md:p-12">
+      <div className="font-stencil text-xs uppercase tracking-[0.3em] text-ink-soft">
+        Business Details · Indore, Madhya Pradesh
+      </div>
+      <h2 id="business-heading" className="mt-3 font-stencil text-3xl uppercase tracking-widest md:text-4xl">
+        MAYANK.DEV
+      </h2>
+      <p className="mt-2 max-w-2xl font-typewriter text-base leading-relaxed md:text-lg">
+        AI-Powered Products &amp; Growth Systems for Local Businesses
+      </p>
+      <div className="my-6 h-[2px] w-24 bg-ink/60" />
+      <dl className="grid gap-x-10 gap-y-5 font-typewriter text-sm md:grid-cols-2 md:text-base">
+        <div>
+          <dt className="font-bold uppercase tracking-widest text-ink-soft">Legal business name</dt>
+          <dd className="mt-1">MAYANK.DEV</dd>
+        </div>
+        <div>
+          <dt className="font-bold uppercase tracking-widest text-ink-soft">Brand</dt>
+          <dd className="mt-1">Mayank.DEV</dd>
+        </div>
+        <div className="md:col-span-2">
+          <dt className="font-bold uppercase tracking-widest text-ink-soft">Registered address</dt>
+          <dd className="mt-1">3rd floor, shiv shakti nagar, Indore, Madhya Pradesh, 452011</dd>
+        </div>
+        <div>
+          <dt className="font-bold uppercase tracking-widest text-ink-soft">Phone</dt>
+          <dd className="mt-1"><a className="underline decoration-dotted underline-offset-4 hover:text-stamp" href="tel:+918962972784">+91 89629 72784</a></dd>
+        </div>
+        <div>
+          <dt className="font-bold uppercase tracking-widest text-ink-soft">Email</dt>
+          <dd className="mt-1 break-all"><a className="underline decoration-dotted underline-offset-4 hover:text-stamp" href="mailto:mayankojha2228@gmail.com">mayankojha2228@gmail.com</a></dd>
+        </div>
+      </dl>
+      <div className="mt-auto pt-6 font-marker text-marker text-base">Independent freelance business · Indore</div>
+    </section>
+  );
+}
+
+const SERVICES = [
+  { title: "Web development", description: "Next.js websites for local businesses, built around their services and customer needs." },
+  { title: "Social media marketing and content", description: "Social media content and marketing support for local business communication." },
+  { title: "CRM and workflow automation", description: "CRM setup and workflow automation to help organize enquiries and routine tasks." },
+  { title: "WhatsApp AI bots and lead capture", description: "WhatsApp AI bots and lead capture flows for local businesses." },
+];
+
+function ServicesPage() {
+  return (
+    <section aria-labelledby="services-heading" className="flex h-full flex-col p-8 text-ink md:p-12">
+      <div className="font-stencil text-xs uppercase tracking-[0.3em] text-ink-soft">
+        Mayank.DEV · Services
+      </div>
+      <h2 id="services-heading" className="mt-3 font-stencil text-3xl uppercase tracking-widest md:text-4xl">
+        Services
+      </h2>
+      <div className="mt-3 mb-6 h-[2px] w-24 bg-ink/60" />
+      <div className="grid flex-1 grid-cols-1 gap-4 sm:grid-cols-2">
+        {SERVICES.map((service, index) => (
+          <article key={service.title} className="border border-ink/35 bg-manila-light/40 p-4 md:p-5">
+            <div className="mb-2 font-stencil text-xs uppercase tracking-widest text-ink-soft">0{index + 1}</div>
+            <h3 className="font-stencil text-lg uppercase tracking-wider">{service.title}</h3>
+            <p className="mt-2 font-typewriter text-sm leading-relaxed">{service.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 /* Spread 2 - Education */
 function EducationLeft() {
   return (
@@ -267,7 +337,7 @@ function EducationLeft() {
         <div className="font-stencil text-xs uppercase tracking-[0.3em] text-ink-soft">
           § 02 · Academic Record
         </div>
-        <Stamp rotate={-4} className="!text-xs">Official Transcript</Stamp>
+        <Stamp rotate={-4} className="!text-xs">Academic Record</Stamp>
       </div>
       <h2 className="font-stencil text-3xl uppercase tracking-widest">Education</h2>
       <div className="mt-2 mb-6 h-[2px] w-24 bg-ink/60" />
@@ -280,14 +350,14 @@ function EducationLeft() {
             </div>
             <div className="text-sm text-ink-soft">Indore, Madhya Pradesh · IN</div>
           </div>
-          <Stamp rotate={6} className="!text-[10px]">Enrolled</Stamp>
+          <Stamp rotate={6} className="!text-[10px]">Graduated</Stamp>
         </div>
 
         <div className="space-y-1.5 text-[14px]">
           <TypedLine label="Program" value="B.Tech · Computer Science Engineering" />
           <TypedLine label="Specialization" value="Artificial Intelligence – IBM" />
           <TypedLine label="Duration" value="Aug 2022 — May 2026" />
-          <TypedLine label="Standing" value="Final Year · Active" />
+          <TypedLine label="Standing" value="B.Tech graduate · May 2026" />
         </div>
 
         <div className="mt-4 border-t border-dashed border-ink/40 pt-3 text-[13px] text-ink-soft">
@@ -297,7 +367,7 @@ function EducationLeft() {
       </div>
 
       <div className="mt-auto font-marker text-marker text-lg rotate-[-2deg]">
-        signed — Registrar ✍
+        Education record · May 2026
       </div>
     </div>
   );
@@ -370,7 +440,7 @@ function ExperienceLeft() {
         <div className="font-stencil text-xs uppercase tracking-[0.3em] text-ink-soft">
           § 03A · Field Op
         </div>
-        <Stamp rotate={-6} className="!text-xs">In Progress</Stamp>
+        <Stamp rotate={-6} className="!text-xs">Completed</Stamp>
       </div>
       <h2 className="font-stencil text-2xl uppercase tracking-widest">
         IBM Generative AI · PBEL
@@ -736,24 +806,25 @@ function LeadershipRight() {
 /* Contact page (single full spread) */
 function ContactPage() {
   return (
-    <div className="relative flex h-full w-full items-center justify-center p-10 text-ink">
-      <div className="w-full max-w-3xl">
+    <div className="relative flex h-full w-full items-center justify-center overflow-y-auto p-5 text-ink md:p-8">
+      <div className="w-full max-w-5xl">
         <div className="mb-6 flex justify-center">
           <Stamp rotate={-4} className="!text-2xl !px-5 !py-2">
-            Case Open — Contact Subject
+            Available for Freelance Work
           </Stamp>
         </div>
 
-        <div
-          className="rounded-sm border-2 border-ink/70 p-8 font-typewriter"
-          style={{ boxShadow: "inset 0 0 30px oklch(0.4 0.06 55 / 0.15)" }}
-        >
+        <div className="grid gap-5 md:grid-cols-2">
+          <div
+            className="rounded-sm border-2 border-ink/70 p-6 font-typewriter md:p-8"
+            style={{ boxShadow: "inset 0 0 30px oklch(0.4 0.06 55 / 0.15)" }}
+          >
           <div className="mb-6 flex items-center justify-between border-b-2 border-dashed border-ink/40 pb-3">
             <div className="font-stencil text-sm uppercase tracking-[0.3em]">
-              Intake Form — Form 27B/6
+              Contact Details
             </div>
             <div className="text-xs uppercase tracking-widest text-ink-soft">
-              Confidential
+              Open for enquiries
             </div>
           </div>
 
@@ -767,7 +838,9 @@ function ContactPage() {
               </a>
             </ContactRow>
             <ContactRow label="Phone">
-              <span>+91 89629 72784</span>
+              <a className="underline decoration-dotted underline-offset-4 hover:text-stamp" href="tel:+918962972784">
+                +91 89629 72784
+              </a>
             </ContactRow>
             <ContactRow label="LinkedIn">
               <a
@@ -800,11 +873,25 @@ function ContactPage() {
               Initiate Contact →
             </a>
           </div>
+          </div>
+
+          <section aria-labelledby="business-contact-heading" className="border-2 border-dashed border-ink/50 p-6 font-typewriter md:p-8">
+            <h2 id="business-contact-heading" className="mb-5 border-b border-dashed border-ink/40 pb-3 font-stencil text-lg uppercase tracking-widest">
+              MAYANK.DEV · Business Contact
+            </h2>
+            <address className="space-y-4 text-sm not-italic leading-relaxed md:text-[15px]">
+              <p><span className="block font-bold uppercase tracking-widest text-ink-soft">Business name</span>MAYANK.DEV</p>
+              <p><span className="block font-bold uppercase tracking-widest text-ink-soft">Address</span>3rd floor, shiv shakti nagar, Indore, Madhya Pradesh, 452011</p>
+              <p><span className="block font-bold uppercase tracking-widest text-ink-soft">Phone</span><a className="underline decoration-dotted underline-offset-4 hover:text-stamp" href="tel:+918962972784">+91 89629 72784</a></p>
+              <p><span className="block font-bold uppercase tracking-widest text-ink-soft">Email</span><a className="break-all underline decoration-dotted underline-offset-4 hover:text-stamp" href="mailto:mayankojha2228@gmail.com">mayankojha2228@gmail.com</a></p>
+              <p><span className="block font-bold uppercase tracking-widest text-ink-soft">LinkedIn</span><a className="break-all underline decoration-dotted underline-offset-4 hover:text-stamp" href="https://www.linkedin.com/in/mayankojha2228" target="_blank" rel="noreferrer">linkedin.com/in/mayankojha2228</a></p>
+              <p><span className="block font-bold uppercase tracking-widest text-ink-soft">GitHub</span><a className="break-all underline decoration-dotted underline-offset-4 hover:text-stamp" href="https://github.com/mayankcsai2225" target="_blank" rel="noreferrer">github.com/mayankcsai2225</a></p>
+            </address>
+          </section>
         </div>
 
         <p className="mt-8 text-center font-typewriter text-sm italic text-ink-soft">
-          This concludes the declassified portion of Subject's file. Full record
-          available upon request.
+          Portfolio of Mayank Ojha · Available for freelance work.
         </p>
       </div>
     </div>
@@ -832,6 +919,8 @@ type SpreadRenderer =
 const SPREAD_CONTENT: Record<string, SpreadRenderer> = {
   cover: { kind: "cover" },
   profile: { kind: "double", left: ProfileLeft, right: ProfileRight },
+  business: { kind: "single", render: BusinessPage },
+  services: { kind: "single", render: ServicesPage },
   education: { kind: "double", left: EducationLeft, right: EducationRight },
   experience: { kind: "double", left: ExperienceLeft, right: ExperienceRight },
   projects: { kind: "double", left: ProjectsLeft, right: ProjectsRight },
@@ -999,7 +1088,7 @@ export default function DossierPortfolio() {
 
       {/* Side tab index */}
       <nav
-        aria-label="Case file index"
+        aria-label="Portfolio sections"
         className="fixed right-4 top-1/2 z-40 hidden -translate-y-1/2 flex-col gap-1.5 md:flex"
       >
         {spreads.map((s, i) => {
@@ -1023,7 +1112,7 @@ export default function DossierPortfolio() {
 
       {/* Top bar */}
       <header className="pointer-events-none fixed left-0 right-0 top-0 z-30 flex items-center justify-between px-6 py-4 font-typewriter text-[11px] uppercase tracking-[0.3em] text-manila/70">
-        <span>Bureau of Talent Acquisition · Vault B</span>
+        <span>Portfolio of Mayank Ojha · MAYANK.DEV</span>
         <span className="hidden md:inline">
           File 2026-AI-001 · {spreads[activeIdx]?.tab ?? "COVER"}
         </span>
@@ -1180,7 +1269,8 @@ export default function DossierPortfolio() {
 
       {/* Footer */}
       <footer className="border-t border-manila-dark/30 bg-desk-2 px-6 py-8 text-center font-typewriter text-xs uppercase tracking-[0.3em] text-manila/70">
-        End of transmission · © {new Date().getFullYear()} Mayank Ojha · Case 2026-AI-001
+        <p>© 2026 MAYANK.DEV · Indore, Madhya Pradesh</p>
+        <a className="mt-3 inline-block underline decoration-dotted underline-offset-4 hover:text-paper" href="/privacy">Privacy Policy</a>
       </footer>
     </div>
   );

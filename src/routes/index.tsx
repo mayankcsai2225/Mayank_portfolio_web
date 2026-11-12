@@ -6,18 +6,18 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Case File 2026-AI-001 — Mayank Ojha | AI/ML Developer Portfolio",
+        title: "Mayank.DEV — AI-Powered Products & Growth Systems for Local Businesses, Indore",
       },
       {
         name: "description",
         content:
-          "The declassified case file of Mayank Ojha — AI/ML developer, full-stack engineer, freelance operative. Scroll to open the dossier.",
+          "Mayank.DEV — AI-Powered Products & Growth Systems for Local Businesses, Indore",
       },
-      { property: "og:title", content: "Case File 2026-AI-001 — Mayank Ojha" },
+      { property: "og:title", content: "Mayank.DEV — AI-Powered Products & Growth Systems for Local Businesses, Indore" },
       {
         property: "og:description",
         content:
-          "A cinematic classified-dossier portfolio: projects, experience, and exhibits on record.",
+          "Mayank.DEV — AI-Powered Products & Growth Systems for Local Businesses, Indore",
       },
     ],
   }),
